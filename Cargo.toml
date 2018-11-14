@@ -1,0 +1,6 @@
+[package]
+name = "rust-http-test"
+version = "0.1.0"
+authors = ["brad <spotty-dog@localhost>"]
+
+[dependencies]
