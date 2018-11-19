@@ -1,0 +1,11 @@
+FROM rust:1.30 as build
+
+COPY . .
+
+RUN cargo build  --release
+
+FROM debian:9.6-slim
+
+COPY --from=build target/release/rust-http-test /rust-http-test
+
+CMD ["/rust-http-test"]
