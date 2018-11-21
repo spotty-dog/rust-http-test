@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["<spotty-dog@localhost>"]
 
 [dependencies]
+actix-web = "0.7.6"
